@@ -1,0 +1,5 @@
+<root>
+  <item name='org.openqa.selenium.OutputType FILE'>
+    <annotation name='java.lang.annotation.Deprecated'/>
+  </item>
+</root>
