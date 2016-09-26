@@ -102,7 +102,7 @@ public class SendLetter {
             Reporter.pass(accountFrom.email);
         } catch (MessagingException e) {
             log.warning("Sending letter Error: " + e.getMessage());
-            Reporter.fail("Sending letter Error: " + accountFrom.email, e.getMessage());
+            Reporter.fail(accountFrom.email, "Sending letter Error: " + e.getMessage());
         } catch (IOException e) {
             e.printStackTrace();
         } finally {

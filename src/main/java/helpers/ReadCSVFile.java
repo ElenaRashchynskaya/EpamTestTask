@@ -33,8 +33,7 @@ public class ReadCSVFile {
 
                 // use comma as separator
                 String[] accountLine = line.split(cvsSplitBy);
-                log.info(Arrays.toString(accountLine));
-                log.info("Account email= " + accountLine[0] + " , password=" + accountLine[1] + "]");
+                log.fine("Account email= " + accountLine[0] + " , password=" + accountLine[1] + "]");
 
                 accountList.add(new Account(accountLine[0], accountLine[1]));
             }

@@ -22,7 +22,7 @@ public class ReadMysql {
         ResultSet rs = db.query("SELECT login,password FROM account");
         try {
             while (rs.next()) {
-                log.info("login = " + rs.getString(1) + "\tpassword = " + rs.getString(2));
+                log.fine("login = " + rs.getString(1) + "\tpassword = " + rs.getString(2));
 
                 accountList.add(new Account(rs.getString(1), rs.getString(2)));
             }
@@ -33,7 +33,7 @@ public class ReadMysql {
 
         //lets print Account list information
         for (Account account : accountList) {
-            log.info(account.toString());
+            log.fine(account.toString());
         }
 
         return accountList;
