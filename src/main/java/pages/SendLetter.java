@@ -62,6 +62,9 @@ public class SendLetter {
             javax.mail.Transport.send(message);
             log.info("Letter send - PASS");
 
+
+            //   Copy message to "Sent Items" folder as read
+            /*
             log.info("----------------------------");
             log.fine("Copy message to \"Sent Items\" folder as read");
             log.info("Letter copy to INBOX - Start");
@@ -91,6 +94,8 @@ public class SendLetter {
             } finally {
                 store.close();
             }
+            */
+
             log.info("Letter send and saved ....");
             log.fine("END Copy message to \"Sent Items\" folder as read");
 

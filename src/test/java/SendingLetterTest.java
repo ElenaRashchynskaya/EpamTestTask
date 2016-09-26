@@ -20,7 +20,7 @@ public class SendingLetterTest {
 
     public void initLog() throws IOException {
 
-        LogManager.getLogManager().readConfiguration(ExampleTest.class.getResourceAsStream("logging.properties"));
+        LogManager.getLogManager().readConfiguration(SendingLetterTest.class.getResourceAsStream("logging.properties"));
 
         // This block configure the logger with handler and formatter
         FileHandler fh = new FileHandler(String.format("tmp/log/log_%s_%s.log", Random.getFormatDate(), Random.getRandomString()));
