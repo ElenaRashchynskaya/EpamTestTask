@@ -13,7 +13,7 @@ import java.util.logging.Logger;
 /**
  * Created by Lenovo on 9/21/2016.
  */
-public class SendLetterSMTPTest {
+public class SendingLetterTest {
 
 
     private static Logger log = Logger.getLogger("testLog");
